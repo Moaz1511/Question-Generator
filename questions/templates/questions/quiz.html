@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ quiz_data.question }}</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <h1>Question:</h1>
+    <p>{{ quiz_data.question }}</p>
+    <h2>Options:</h2>
+    <ul>
+        {% for option in quiz_data.options %}
+        <li>{{ option }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Correct Answer:</h2>
+    <p>{{ quiz_data.correct_answer }}</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+#quiz-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#quiz-list li {
+    margin: 10px 0;
+}
+
+#quiz-form div {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: green;
+}
